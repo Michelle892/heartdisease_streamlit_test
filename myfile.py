@@ -125,10 +125,10 @@ pred=preprocess(age,sex,cp,trestbps,restecg,chol,fbs,thalach,exang,oldpeak,slope
 
 if st.button("Predict"):    
   if pred[0] == 0:
-    st.error('Warning! You have high risk of getting a heart attack!')
+    st.error('You have lower risk of getting a heart disease!!')
     
   else:
-    st.success('You have lower risk of getting a heart disease!')
+    st.success('Warning! You have high risk of getting a heart attack!')
     
 
 st.sidebar.subheader("About App")
